@@ -23,4 +23,4 @@ RUN unzip koppee.zip
 RUN cp -rvf koppee/*
 RUN rm -rf koppee koppee.zip
 CMD ["/usr/bin/httpd", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
