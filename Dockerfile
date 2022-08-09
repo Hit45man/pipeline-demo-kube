@@ -1,5 +1,4 @@
-FROM  centos:latest
-MAINTAINER krohit.kamble@gmail.com
+FROM  ubuntu:20.04
 RUN yum install -y httpd \
  zip\
  unzip
