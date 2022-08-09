@@ -1,4 +1,5 @@
 FROM  centos:latest
+MAINTAINER krohit.kamble@gmail.com
 RUN yum install -y httpd \
  zip\
  unzip
@@ -7,7 +8,7 @@ WORKDIR /var/www/html/
 RUN unzip romofyi.zip
 RUN cp -rvf romofyi/* 
 RUN rm -rf romofyi romofyi.zip
-CMD ["/usr/bin/httpd","-D", "FOREGROUND"]
+CMD ["/usr/sbin/httpd","-D", "FOREGROUND"]
 EXPOSE 80
 
 
