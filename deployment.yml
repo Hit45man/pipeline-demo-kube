@@ -1,0 +1,20 @@
+kind : deployment
+apiVersion: apps/v1
+metadata:
+  name: myapp
+spec:
+  replicas : 2
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: rohikam/pipeline-demo-kub
+        imagePullPolicy : Always
+        ports:
+        - containerPort: 80
