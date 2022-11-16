@@ -11,7 +11,7 @@ ports :
   nodeport : 31200
 selector :
   app: myapp
-type: LoadBalancer
+type: NodePort
 
      
   
