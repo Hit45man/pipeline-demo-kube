@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: rohikam/pipeline-demo-kub
+        image: rohikam/devops-project-2:latest
         imagePullPolicy : Always
         ports:
         - containerPort: 80
